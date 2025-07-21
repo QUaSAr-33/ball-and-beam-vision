@@ -1,0 +1,20 @@
+# Hardware Design
+
+## Components
+| Part | Specification | Quantity |
+|------|---------------|----------|
+| Servo Motor | MG996R (or similar high-torque) | 2 |
+| Microcontroller | ESP32 Devkit | 1 |
+| Webcam | 640x480 USB camera | 1 |
+| Beam | Aluminum strip, length 40 cm | 1 |
+| Frame | 3D printed PLA | 1 |
+
+## Mechanical Assembly
+- The beam is mounted on a 3D printed frame with two servo motors providing rotation on X and Y axes.
+- Webcam is placed above the beam, aligned with the center.
+
+![Wiring Diagram](../mechanical/hardware_design/servo_connections.png)
+
+## Power
+- Servo motors powered by an external 5V/2A supply.
+- Common ground between Arduino and power supply.

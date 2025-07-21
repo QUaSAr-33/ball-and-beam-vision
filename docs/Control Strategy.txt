@@ -1,0 +1,25 @@
+# Control Strategy
+
+## Overview
+The system uses a **PID controller** to keep the ball near the center of the beam.
+
+**Signal Flow:**
+Webcam (ball position) → Python Script (PID) → Serial → Arduino → Servo Motor → Beam
+
+## Controller
+- **Input:** Error = Desired position (center) – Measured position
+- **Output:** Servo angle
+- **Control Law:**
+\[
+u(t) = K_p e(t) + K_i \int e(t) dt + K_d \frac{de(t)}{dt}
+\]
+
+## Tuning
+- Initial tuning was performed in Simulink using a linearized model.
+- Final fine-tuning was done experimentally on the physical system.
+
+| Parameter | Value |
+|-----------|-------|
+| Kp | 0.075 |
+| Ki | 0.0 |
+| Kd | 0.12 |
