@@ -2,9 +2,9 @@
 
 ## 1. Hardware Setup
 - Mount the beam on the servo frame.
-- Connect servo signal wires to Arduino PWM pins (e.g., D9 and D10).
+- Connect servo signal wire to Arduino PWM pin (e.g., D9).
 - Connect power supply (5V, GND) ensuring common ground with Arduino.
-- Place webcam above the beam, centered.
+- Place webcam in front of the beam, centered.
 
 ## 2. Upload Arduino Code
 - Open `arduino/ball_beam_controller.ino` in Arduino IDE.

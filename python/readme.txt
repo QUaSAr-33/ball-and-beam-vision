@@ -1,7 +1,7 @@
 
 ---
 
-### ✅ `python/README.md`
+### ✅ `python/README.txt`
 ```markdown
 # Python Vision Tracking
 
